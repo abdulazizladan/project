@@ -14,10 +14,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ShoppingRoutingModule } from './shopping-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ItemComponent } from './components/item/item.component';
+import { ItemsComponent } from './components/items/items.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ItemComponent],
+  declarations: [DashboardComponent, ItemComponent, ItemsComponent],
   imports: [
     CommonModule,
     ShoppingRoutingModule,

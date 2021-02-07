@@ -1,0 +1,44 @@
+[
+  {
+    "name" : "Sand",
+    "description" : "Sea sand sold by the truck load.",
+    "image" : "a.png",
+    "price" : 0
+  },
+  {
+    "name" : "Cement",
+    "description" : "Dangote cement sold by bag",
+    "image" : "b.png",
+    "price" : 0
+  },
+  {
+    "name" : "Nails",
+    "description" : "",
+    "image" : "c.png",
+    "price" : 0
+  },
+  {
+    "name" : "Wood plank",
+    "description" : "2x4 planks sold by the dozen",
+    "image" : "d.png",
+    "price" : 0
+  },
+  {
+    "name" : "Wire mesh",
+    "description" : "Yards of fine wire mesh",
+    "image" : "e.png",
+    "price" : 0
+  },
+  {
+    "name" : "Pipes",
+    "description" : "Bathroom pipes",
+    "image" : "f.png",
+    "price" : 0
+  },
+  {
+    "name" : "Porcelain toilet",
+    "description" : "Porcelain flush toilets",
+    "image" : "g.png",
+    "price" : 0
+  }
+]
