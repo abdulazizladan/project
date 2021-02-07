@@ -12,7 +12,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$project-primary: mat-palette($mat-indigo);
+$project-primary: mat-palette($mat-grey, 900);
 $project-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -35,5 +35,7 @@ $project-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body {
+  width: 100%;
+  height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
