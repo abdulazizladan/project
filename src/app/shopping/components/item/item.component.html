@@ -1,14 +1,14 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>
-      {{name}}
+      {{name}}ABC
     </mat-card-title>
     <mat-card-subtitle>
       Item price
     </mat-card-subtitle>
   </mat-card-header>
 
-  <img MatCardImage src="#">
+  <img mat-card-image src="./assets/img/a.png">
 
   <mat-card-content>
     Item description
@@ -20,7 +20,7 @@
       Add to card
     </button>
     <span fxFlex="20px"></span>
-    <button mat-flat-button color="primary">
+    <button mat-flat-button color="primary" (click)="buyItem()">
       <mat-icon>shopping_cart</mat-icon>
       Buy
     </button>
