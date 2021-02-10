@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   }
 
   openPurchaseDialog() : void{
-    const dialogRef = this.dialog.open(PurchaseComponent);
+    const dialogRef = this.dialog.open(PurchaseComponent, { width : "800px"});
   }
 
 }
