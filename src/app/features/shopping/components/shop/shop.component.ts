@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PurchaseComponent } from '../purchase/purchase.component';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Item } from '../../store/models/item.model';
 
 @Component({
   selector: 'app-shop',
@@ -9,8 +10,23 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 })
 export class ShopComponent implements OnInit {
 
-  constructor(public dialog : MatDialog) {
+  public items: Item[];
 
+  constructor(public dialog : MatDialog) {
+    this.items = [
+      {
+        id: 0,
+        name: "Cement",
+        description: "Dangote premium cement",
+        price: 1800
+      },
+      {
+        id: 0,
+        name: "Plywood",
+        description: "Premium Birch wood sheets",
+        price: 4500
+      }
+    ];
   }
 
   ngOnInit(): void {

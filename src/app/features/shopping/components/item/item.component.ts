@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Item } from '../../store/models/item.model';
 
 @Component({
   selector: 'app-item',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ItemComponent implements OnInit {
 
   @Input()
-  name: string = "";
+  public data: Item;
 
   @Output()
   purchaseEvent = new EventEmitter<string>();
@@ -17,7 +18,14 @@ export class ItemComponent implements OnInit {
     this.purchaseEvent.emit();
   }
 
-  constructor() { }
+  constructor() {
+    this.data = {
+      id : 0,
+      name : "",
+      description : "",
+      price : 0
+    };
+   }
 
   ngOnInit(): void {
   }
