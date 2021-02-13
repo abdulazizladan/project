@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppComponent {
     constructor() {
-        this.title = 'project';
+        this.title = 'Crave';
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
@@ -120,7 +120,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        loadChildren: () => __webpack_require__.e(/*! import() | shopping-shopping-module */ "shopping-shopping-module").then(__webpack_require__.bind(null, /*! ./shopping/shopping.module */ "aAFz")).then(mod => mod.ShoppingModule)
+        loadChildren: () => __webpack_require__.e(/*! import() | features-shopping-shopping-module */ "features-shopping-shopping-module").then(__webpack_require__.bind(null, /*! ./features/shopping/shopping.module */ "NPwu")).then(mod => mod.ShoppingModule)
     }
 ];
 class AppRoutingModule {
