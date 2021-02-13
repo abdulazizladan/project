@@ -4,7 +4,10 @@
       Title
       <span fxFlex="1 1 auto"></span>
       <button mat-flat-button color="primary">
-        Store
+        Shop
+      </button>
+      <button mat-flat-button color="primary">
+        Tracking
       </button>
       <button mat-flat-button color="primary">
         <mat-icon>shopping_cart</mat-icon>
@@ -12,20 +15,13 @@
       </button>
     </mat-toolbar-row>
   </mat-toolbar>
-
-  <div fxFlex="1 1 auto" fxLayoutAlign="center center space-between" fxLayout.xs="column" fxLayoutGap.xs="5px" fxLayoutGap.gt-xs="20px" fxLayout.gt-xs="row wrap">
-    <app-item name="Zobo" (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
-    <app-item (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
-    <app-item (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
-    <app-item (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
-    <app-item (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
-    <app-item (purchaseEvent)="openPurchaseDialog()" fxFlex.gt-xs="400px"></app-item>
+  <div fxFlex="1 1 auto">
+    <router-outlet></router-outlet>
   </div>
-
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span fxFlex="1 1 auto"></span>
-      Project title
+      Crave &copy; 2021
       <span fxFlex="1 1 auto"></span>
     </mat-toolbar-row>
   </mat-toolbar>

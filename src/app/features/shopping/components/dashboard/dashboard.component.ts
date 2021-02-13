@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { PurchaseComponent } from '../purchase/purchase.component';
 
 
 @Component({
@@ -10,7 +8,7 @@ import { PurchaseComponent } from '../purchase/purchase.component';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor( public dialog : MatDialog) {
+  constructor( ) {
 
   }
 
@@ -18,8 +16,6 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  openPurchaseDialog() : void{
-    const dialogRef = this.dialog.open(PurchaseComponent, { width : "800px"});
-  }
+
 
 }
